@@ -1,0 +1,12 @@
+package in.ineuron.service;
+
+import org.springframework.stereotype.Service;
+
+@Service("service")
+public class ERailClientApp {
+
+	public void invokeRestApi() {
+		
+	}
+	
+}

@@ -1,0 +1,7 @@
+package in.ineuron.service;
+
+
+@Service("service")
+public class ERailClientApp {
+
+}

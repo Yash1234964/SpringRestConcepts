@@ -1,0 +1,14 @@
+package in.ineuron.service;
+
+import in.ineuron.model.Tourist;
+
+@Service
+public class TouristManagementServiceImpl implements ITouristManagementService {
+
+	@Override
+	public String registerTourist(Tourist tourist) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

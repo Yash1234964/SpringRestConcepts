@@ -1,0 +1,25 @@
+package in.ineuron.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import in.ineuron.dao.ITouristRepo;
+import in.ineuron.model.Tourist;
+
+@Service
+public class TouristManagementServiceImpl implements ITouristManagementService {
+
+	@Autowired
+	ITouristRepo repo;
+	
+	@Override
+	public String registerTourist(Tourist tourist) {
+		
+		Integer tid=repo.save(tourist).getTid();
+		
+		
+		
+		return "Tourist is registered having the ticket id :: " + tid;
+	}
+
+}

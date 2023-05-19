@@ -1,0 +1,28 @@
+package in.ineuron.controller;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PatchMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class CustomerOPerationsController {
+
+	@GetMapping("/report")
+	public ResponseEntity<String> showCustomerReport(){
+		return new ResponseEntity<String>("From Get-show report method",HttpStatus.OK);
+	}
+	
+	@PostMapping("/report")
+	public ResponseEntity<String> registerCustomer(){
+		return new ResponseEntity<String>("From Post-show report method",HttpStatus.OK);
+	}
+	
+	@PatchMapping("/report")
+	public ResponseEntity<String> updateCustomerByNo(){
+		return new ResponseEntity<String>("From Patch-show report method",HttpStatus.OK);
+	}
+	
+}

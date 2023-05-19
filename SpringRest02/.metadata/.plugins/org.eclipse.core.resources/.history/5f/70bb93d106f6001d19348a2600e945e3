@@ -1,0 +1,5 @@
+package in.ineuron.request;
+
+public class PassengerInfo {
+
+}

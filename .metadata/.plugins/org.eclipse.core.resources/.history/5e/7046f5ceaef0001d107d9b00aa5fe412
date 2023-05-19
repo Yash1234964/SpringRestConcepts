@@ -1,0 +1,8 @@
+package in.ineuron.model;
+
+import lombok.Data;
+
+@Data
+public class Customer {
+
+}

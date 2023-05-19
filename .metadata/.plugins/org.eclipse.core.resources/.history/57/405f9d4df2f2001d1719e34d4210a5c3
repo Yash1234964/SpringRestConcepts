@@ -1,0 +1,7 @@
+package in.ineuron.service;
+
+import in.ineuron.controller.Tourist;
+
+public interface ITouristManagementService {
+	public String registerTourist(Tourist tourist);
+}
